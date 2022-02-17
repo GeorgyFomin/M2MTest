@@ -95,12 +95,13 @@ namespace WebAPI.Data
                 context.Products.Remove(product);
             }
             context.SaveChanges();
-            if (context.Ingredients!=null)
+            if (context.Ingredients != null)
             {
                 context.Ingredients.AddRange(ingredients);
                 context.SaveChanges();
             }
-            context.Products.AddRange(GetProducts());
+            List<Product> products;
+            context.Products.AddRange(products = GetProducts());
             context.SaveChanges();
         }
     }

@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Persistence.MsSql\Persistence.MsSql.csproj" />
+    <ProjectReference Include="..\UseCases.API\UseCases.API.csproj" />
   </ItemGroup>
 
 </Project>
